@@ -1,0 +1,15 @@
+Source: sample1
+Section: contrib
+Priority: extra
+Maintainer: Yasuaki Hagiwara <yhagiwara@netgear.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://www.readynas.com
+
+Package: sample1
+Architecture: amd64 armel
+Depends: ${shlibs:Depends}, ${misc:Depends}, readynasos (>= 6.0.5~T1271), php5-sqlite (>= 5.4.4-10)
+Description: NETGEAR ReadyNASOS Addon Sample1
+ This is Addon Sample for NETGEAR devices which runs ReadyNASOS. This will monitor cpu usage at configured interval, and save to database. And user can query result.
+
+

@@ -1,0 +1,13 @@
+<Application resource-id="sample1"><!-- 'resource-id' must be AppName -->
+  <Name>Simple CPU usage recorder</Name><!-- Any desciptive name, upto 48 chars -->
+  <Author>NETGEAR Inc.</Author><!-- Authers name. upto 48 chars -->
+  <Version>1.0.0-p2</Version><!-- Version -->
+  <RequireReboot>0</RequireReboot><!-- If non-zero, it indicate reboot is required. -->
+  <ConfigURL>https://localhost/apps/sample1/config.html</ConfigURL><!-- 'localhost' will be replaced by framework JS. -->
+  <LaunchURL>http://localhost:7080/index.php</LaunchURL><!-- 'localhost' will be replaced by framework JS. -->
+  <ReservePort>7080</ReservePort>
+  <DebianPackage>sample1</DebianPackage>
+  <ServiceName>fvapp-sample1.service</ServiceName><!-- If start/stop need to start/stop service, specify service name -->
+  <Description lang="en-us">This is sample application. This will get CPU usage information at configurable intervals, and save into database. And result can be retrieved from web ui.</Description>
+  <Description lang="ja">このサンプルは、CPU の利用率を設定された間隔で取得し、データベースに保存します。また、web ui で、データベースを閲覧できます。</Description>
+</Application>

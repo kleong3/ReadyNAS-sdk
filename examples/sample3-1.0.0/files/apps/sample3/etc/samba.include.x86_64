@@ -1,0 +1,2 @@
+vfs objects = audit aio_linux acl_xattr shadow_copy2
+audit:priority = INFO

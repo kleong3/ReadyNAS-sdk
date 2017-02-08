@@ -1,0 +1,13 @@
+[Unit]
+Description=Service for sample1 app
+After=apache2.service
+
+[Service]
+ExecStart=/apps/sample1/bin/sample1
+Type=notify
+TimeoutSec=200
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

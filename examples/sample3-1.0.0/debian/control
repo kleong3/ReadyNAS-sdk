@@ -1,0 +1,15 @@
+Source: sample3
+Section: contrib
+Priority: extra
+Maintainer: Yasuaki Hagiwara <yhagiwara@netgear.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.3
+Homepage: http://www.readynas.com
+
+Package: sample3
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, readynasos (>= 6.0.5~T1272), php5-sqlite (>= 5.4.4-10)
+Description: NETGEAR ReadyNASOS Addon Sample3
+ This is Addon Sample for NETGEAR devices which runs ReadyNASOS. This will use 'audit' samba vfs module on selected share.
+
+

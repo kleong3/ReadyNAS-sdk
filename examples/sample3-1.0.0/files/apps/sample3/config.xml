@@ -1,0 +1,13 @@
+<Application resource-id="sample3"><!-- 'resource-id' must be AppName -->
+  <Name>File Audit for SMB</Name><!-- Any desciptive name, upto 48 chars -->
+  <Author>NETGEAR Inc.</Author><!-- Authers name. upto 48 chars -->
+  <Version>1.0.0-p1</Version><!-- Version -->
+  <RequireReboot>0</RequireReboot><!-- If non-zero, it indicate reboot is required. -->
+  <ConfigURL>https://localhost/apps/sample3/config.html</ConfigURL><!-- 'localhost' will be replaced by framework JS. -->
+  <LaunchURL/>
+  <ReservePort/>
+  <DebianPackage>sample3</DebianPackage>
+  <ServiceName/>
+  <Description lang="en-us">This is sample application. This will audit access from Windows on selected share using samba vfs_audit module. Please notice there is no "Launch" button needed, and no additional service requires. Follow link for "Settings" to setup samba config.</Description>
+  <Description lang="ja">このサンプルは、samba の vfs_audit モジュールを使用して、Windowsからのアクセスをモニターします。「設定」のリンクで、samba 設定ファイルを変更します。</Description>
+</Application>
