@@ -1,5 +1,5 @@
-apps/sample1-1.0.0/config
-apps/sample-1.0.0/bin
+apps/sample1/config
+apps/sample1/bin
 
 #this file will automatically create directories 
 #the directories above are standard for readyNAS packages
