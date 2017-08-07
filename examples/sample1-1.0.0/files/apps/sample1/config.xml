@@ -11,3 +11,11 @@
   <Description lang="en-us">This is sample application. This will get CPU usage information at configurable intervals, and save into database. And result can be retrieved from web ui.</Description>
   <Description lang="ja">このサンプルは、CPU の利用率を設定された間隔で取得し、データベースに保存します。また、web ui で、データベースを閲覧できます。</Description>
 </Application>
+
+#Notes:
+  #about the LaunchURL and ReservePort:
+    #The readyNAS already has apps available to users, each occupying a specific port. If you are working on a 
+    #pre-existing readyNAS application, use the respecitve port already reserved for the app
+    #(https://apps.readynas.com/cgi-bin/get-reserved-ports.rb)
+    #Additionally, some applications like PyLoad will provide their own web services; therefore, make sure 
+    #the port number for the web interface matches with the LaunchURL port number. 
