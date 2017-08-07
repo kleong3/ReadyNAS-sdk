@@ -1,6 +1,5 @@
 The Debian Package sample1
 ----------------------------
-
-Comments regarding the Package
-
- -- hagi <hagi@unknown>  Sat, 08 Dec 2012 09:01:37 -0800
+The files found within the debian folder are necessary to create the debian package for the program. 
+A debian package allows for the automatic installation, upgrading, configuring, and removal of computer 
+programs for Debian. 
