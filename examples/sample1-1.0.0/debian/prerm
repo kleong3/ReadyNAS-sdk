@@ -1,6 +1,6 @@
 #! /bin/sh
 # prerm script for sample1
-#
+# stops any daemons asociated with the package
 # see: dh_installdeb(1)
 
 set -e
@@ -17,8 +17,10 @@ set -e
 
 case "$1" in
     remove|upgrade|deconfigure)
-        systemctl stop fvapp-sample1.service
-        systemctl disable fvapp-sample1.service || true
+        if ls /apps/sample1/fvapp-sample1.service 1. /dev/null 2>&1; then
+            systemctl stop fvapp-sample1.service
+            systemctl disable fvapp-sample1.service || true
+        fi
         ;;
     failed-upgrade)
         ;;
