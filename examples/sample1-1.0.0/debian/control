@@ -16,15 +16,19 @@ Description: NETGEAR ReadyNASOS Addon Sample1
 #Source:
  #source package name
 #Priority:
- the priority of the debian package. varies from (optional, extra, required, important, or standard). 
+ #the priority of the debian package. varies from (optional, extra, required, important, or standard). 
  #Use 'optional' unless the the package is essential to the functioning system such as booting or networking
  #functionality.
  #'Extra' is typically used for debugging packages and packages not meant to be used on a standard desktop installation.
 #Build-Depends:
  #the list of packages that need to be installed to the build the package
  
- #Package:
+#optional user-defined fields. these allow for the use of existing third-party debian repositorie within the app. 
+#this allows the developer help provide the newer apps based on updates that may not edist in the Debian Jessie's repo and/or would require a more manual intervention.
+
+#Package:
   #name of the binary package
+  #no capital letters!
  #Architecture: 
   #the computer architectures the binary package can work on (i.e. amd64 armel)
   #any - the package can be built for any architecture but the binary package has to be built for each architecture separately
