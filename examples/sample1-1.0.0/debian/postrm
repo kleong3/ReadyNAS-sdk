@@ -1,6 +1,6 @@
 #! /bin/sh
 # postrm script for sample1
-#
+# modifies links or other files and/or removes files created by the package
 # see: dh_installdeb(1)
 
 set -e
