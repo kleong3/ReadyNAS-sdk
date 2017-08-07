@@ -1,0 +1,16 @@
+#setup the build environment
+install:
+  -sudo apt-get qq update
+  -sudo apt-get install -y debhelper dh-autoreconf devscripts
+  
+#running the build script
+script:
+  -debuild -i -us -uc -b
+  
+#Notes:
+  #Travis is a cloud automation suite like Jenkins that builds test for open source projects
+  #and allows for the integration of code making it very useful with GitHub. 
+  #It will need flags for setup and tear down and the travis YaML is the configuration file for Travis.
+  #the code above is the most important part of the file.
+  #if you are not building an app from scratch and are instead building off a pre-existing one, 
+  #the program may In that case, import that file and add in the code above. 
