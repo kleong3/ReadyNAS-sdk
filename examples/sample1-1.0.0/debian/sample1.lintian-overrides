@@ -1,0 +1,7 @@
+sample1: non-standard-toplevel-dir apps/
+sample1: file-in-unusual-dir apps/sample1/*
+sample1: script-not-executable apps/sample1/*
+sample1: executable-not-elf-or-script apps/sample1/*
+
+#sometimes lintian reports bugs int he ebian package when there aren't any;
+#therefore we write in manual overrides to avoid this issue
