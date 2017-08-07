@@ -1,6 +1,9 @@
 An annotated version of the ReadyNAS debian package template located: https://github.com/ReadyNAS/sdk.
 
 
+Original Read Me file:
+
+
 ## ReadyNAS OS App SDK
 ![ReadyNAS SDK Logo](https://apps.readynas.com/pages/wp-content/uploads/2017/02/readynas-sdk-banner-1024x338.jpg "ReadyNAS SDK Logo")
 
