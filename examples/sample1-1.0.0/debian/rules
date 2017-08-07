@@ -12,15 +12,15 @@ DESTDIR = $(CURDIR)/debian/sample1.0.0
 	
 override_dh_install:
 	#copies the current diectory .../rn-files to the destination directory .../apps/sample1-1.0.0
-	cp -R $(CURDIR)/rin-files/* ${DESTDIR}/apps/sample1-1.0.0
-	cp -R $(CURDIR)/config/* ${DESTDIR}/apps/sample1-1.0.0/config
+	cp -R $(CURDIR)/rin-files/* ${DESTDIR}/apps/sample1
+	cp -R $(CURDIR)/config/* ${DESTDIR}/apps/sample1/config
 	mkdir -p $(CURDIR)/git-files
 	#creates the directory  .../git-files
 	if [-d ./git-files/.git]; then git --git-dir=./git-files/.git pull; fi
 	if [ !-d ./git-files/.git ]; then git clone -b stable https://github.com/...../....git ./git-files; fi
 	#if the directory does not exist, clone the fiels from the stable branch of the program
 	#it is important that the prpogram pulls from the stable branch; otherwise the program may not work 
-	cp -R $(CURDIR)/git-files/* ${DESTDIR}/apps/sample1-1.0.0/bin
+	cp -R $(CURDIR)/git-files/* ${DESTDIR}/apps/sample1/bin
 	
 
 	
