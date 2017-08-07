@@ -17,6 +17,9 @@ sample1-1.0.0/debian/rules
 sample1-1.0.0/debian/compat
 sample1-1.0.0/debian/prerm
 sample1-1.0.0/debian/docs
+sample1-1.0.0/debian/dirs
+sample1-1.0.0/debian/sample1.lintian-overrides
+sample1-1.0.0/debian/travis.yml
 sample1-1.0.0/files
 sample1-1.0.0/files/apps
 sample1-1.0.0/files/apps/sample1
@@ -73,3 +76,11 @@ This command cleans work files and output files.
 $ cd examples/sample1-1.0.0
 $ schroot -c R6 make -- veryclean
 ```
+
+#### Debugging
+Go to your readyNAS homepage and turn on ssh. This command will display the logs of your readyNAs.
+```
+$ ssh root@your-readyNAS-IP-Address
+$ journalctl -af
+```
+
