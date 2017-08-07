@@ -11,7 +11,8 @@ Architecture: amd64 armel
 Depends: ${shlibs:Depends}, ${misc:Depends}, readynasos (>= 6.1.0), php5-sqlite (>= 5.4.4-10), git
 Description: NETGEAR ReadyNASOS Addon Sample1
  This is Addon Sample for NETGEAR devices which runs ReadyNASOS. This will monitor cpu usage at configured interval, and save to database. And user can query result.
-
+XB-Repo: deb https://deb.nodesource.com/node_7.x.jessie main
+XB-Repo_KeyUrl: https://deb.noesource.com/gpgkey/nodesource.gpg.key
 
 #Source:
  #source package name
@@ -23,9 +24,6 @@ Description: NETGEAR ReadyNASOS Addon Sample1
 #Build-Depends:
  #the list of packages that need to be installed to the build the package
  
-#optional user-defined fields. these allow for the use of existing third-party debian repositorie within the app. 
-#this allows the developer help provide the newer apps based on updates that may not edist in the Debian Jessie's repo and/or would require a more manual intervention.
-
 #Package:
   #name of the binary package
   #no capital letters!
@@ -39,4 +37,13 @@ Description: NETGEAR ReadyNASOS Addon Sample1
   #${shilbs:Depends} : shared library dependencies
   #${misc:Depends} : debhepler dependencies
   #other dependencies must be added manually to either DEpends or Build-Depends
+ #XB-Repo..
+  #optional user-defined fields. these allow for the use of existing third-party debian repositories within the app. 
+  #this allows the developer help provide the newer apps based on updates that may not exist in the Debian Jessie's repo 
+  #and/or would require a more manual intervention.
+  #i.e.
+   #XB-Repo: contains the string that you would like to have in your /etc/apt/source.d/x.list
+   #XB-Repo-Key-Url: containsa link to the gpg key file information
+   #XB-Repo-Keyserver: contains the repo's referenced key server
+   #XB-Repo-Key-ID: contains the key id that would work with the key server
   
