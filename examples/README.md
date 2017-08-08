@@ -40,11 +40,11 @@ into a bash script that can be run separately.
 ```
 And run the following command in a new terminal to pinpoint where the error is.
 ```
-$bash ~/path/to/scriptname
+$ bash ~/path/to/scriptname
 ```
 #### Permissions
 The following code changes permissions of files/folders, making them accessible.
 ```
-$chmod u+x scriptname
+$ chmod u+x scriptname
 ```
 
