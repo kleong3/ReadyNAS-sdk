@@ -62,25 +62,3 @@ $ cd examples/sample1-1.0.0
 $ schroot -c R6 debuild -- -uc -us -B                                  ... for _amd64.deb
 $ ARCH=arm schroot -p -c R6 debuild -- -e ARCH -uc -us -B -aarmel      ... for _armel.deb
 ```
-#### Clean up
-This command cleans work files, but doesn't clean `.deb` file and other outputs.
-
-```
-$ cd examples/sample1-1.0.0
-$ schroot -c R6 dh -- clean
-```
-#### Clean everything
-This command cleans work files and output files.
-
-```
-$ cd examples/sample1-1.0.0
-$ schroot -c R6 make -- veryclean
-```
-
-#### Debugging
-Go to your readyNAS homepage and turn on ssh. This command will display the logs of your readyNAs.
-```
-$ ssh root@your-readyNAS-IP-Address
-$ journalctl -af
-```
-
